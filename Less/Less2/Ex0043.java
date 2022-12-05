@@ -1,4 +1,4 @@
-package Les2;
+package Less2;
 
 // public class Progtam {
 //     public static void main(String[] args) {
