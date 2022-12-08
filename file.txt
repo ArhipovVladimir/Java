@@ -1,6 +1,0 @@
-.\.git
-.\.gitignote
-.\file.txt
-.\HomeWork
-.\Less
-.\Seminar
