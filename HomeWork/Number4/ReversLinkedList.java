@@ -1,28 +1,12 @@
-import java.util.LinkedList;
-
 // 1. Пусть дан LinkedList с несколькими элементами. Реализуйте метод, 
 // который вернет “перевернутый” список.
 
+import java.util.LinkedList;
 import java.util.Random;
 
 public class ReversLinkedList {
    
-    
-  
-
-static LinkedList<Integer> reverseLinkedList(LinkedList<Integer> llist)
-    {
-        LinkedList<String> revLinkedList = new LinkedList<String>();
-        for (int i = llist.size() - 1; i >= 0; i--) {
-  
-     
-            revLinkedList.add(llist.get(i));
-        }
-     
-        return revLinkedList;
-    }
-
-public static void main(String[] args) {
+    public static void main(String[] args) {
     
         LinkedList<Integer> ll = new LinkedList<>();
         Random rnd = new Random();
@@ -33,12 +17,18 @@ public static void main(String[] args) {
             }
         System.out.println("Исходный");  
         System.out.println(ll);
-        
-        LinkedList llrev = reverseLinkedList (ll);
-      
+    
+         int temp = 0;
+        while (temp != ll.size() - 1) {
+            ll.add(ll.size()-temp, ll.getFirst());
+            ll.removeFirst();
+            temp++;
+        }
         System.out.println("Перевертышь");
-        System.out.println(llrev);
-    }
+        System.out.println(ll);
+    
+
+}
 
 }
 
