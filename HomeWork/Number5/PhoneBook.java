@@ -4,9 +4,8 @@
 // учитывая,что 1 человек может иметь несколько телефонов.
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Map;
+
 
 public class PhoneBook {
     private static HashMap<String, ArrayList<Integer>> phoneBook = new HashMap<>();
